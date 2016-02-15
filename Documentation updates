@@ -1,0 +1,42 @@
+This document ist to address some further extensions in the RBEFdata package which need/should be added to the Documentaion file.
+The ideas for further edits are based on the preparation of a workshop on the dataportal of the BEF-China project. Furthermore I
+try to address some typos or other missing information.
+
+GENERAL Information:
+In order to make full use of functions of rbefdata you need to be registered in the protal.
+
+1. bef.options()
+In order to gain access to restricted data, the user needs to set his/her user credentioals within the bef.options command. 
+This is not adequately documented in bef.options(). Suggestion:
+
+Comment on all possible options that can be set
+
+$url
+[1] "http://china.befdata.biow.uni-leipzig.de"
+Specifies the URL to which BEFdata will connect. This sets the basic down- and upload addresses as well as the liks to the
+datasets.
+
+$tematres_url
+[1] "http://tematres.befdata.biow.uni-leipzig.de/vocab/index.php"
+The tematres is a an open source vocabulary server, web application to manage and exploit vocabularies, thesauri, taxonomies and 
+formal representations of knowledge. Here, a specific adress with access to the tematres thesaurus specifically consigned for your
+needs can be specified. The default is a connection to the tematres thesaurus of CAFE (Comprehensive annotation for Ecology)
+which is specifically designed for the description and annotation of ecological data.
+
+
+$tematres_service_url
+[1] "http://tematres.befdata.biow.uni-leipzig.de/vocab/services.php"
+This URL can be specified to reach certain services provided by your thesaurus. In this case it will e.g. submitt serch terms for
+keywords or terms wwithin the tematres repository. The current default is the CAFE repsitory (see $tematres_url
+
+$download_dir
+[1] "downloads"
+Specifies the directory to which your downloaded data will be saved. The default is your system's download folder.
+
+$user_credentials
+[1] ""
+The user credentials contain the necessary information connected to your profile on the BEF-Data portla specified under $url.
+This contains your personalized inforamtion as well as your access rights to certain datasets. Moreover, having specified a 
+paper proposal on the dataportal (and this has been approved by all data oweners), the user credentials also will allow
+you to access the (possibly restricted) datasets you requested for your analyses. You can find your credentials by 1) logging in
+to your account on the BEF-Data protal; -> Profile -> left hand side under your avatar picture. You may copy and paste this information.
